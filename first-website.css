@@ -1,0 +1,514 @@
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 60%;
+    height: auto;
+    border: 2px double black;
+    margin-top: 3%;
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2, h3 {
+    border-top: 2px double black;
+    border-bottom: 2px double black;
+    color:rgb(53, 53, 148);
+}
+
+.page-title {
+    padding: 2% 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 5%;
+    box-sizing: border-box;
+    border-top: 2px double black;
+    border-bottom: 2px double black;
+    margin-bottom: 1%;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(84, 190, 255);
+}
+
+h1, h2, p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: orange;
+}
+
+p {
+    padding: 1%;
+}
+
+/* page1 css */
+
+.main-body-grid {
+    display: grid;
+    grid: repeat(3, auto) / auto 40%;
+}
+
+.body1.grid1 {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-self: center;
+    width: 98%;
+    height: 330px;
+}
+
+.page1-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body1.grid2 {
+    grid-area: 2 / 1 / 3 / 3;
+    margin: 1% 0;
+}
+
+.body1.grid3 {
+    grid-area: 3 / 1 / 4 / 2;
+    border-right: 2px double black;
+}
+
+.body1.grid4 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+strong {
+    color: orange;
+}
+
+em {
+    text-transform: uppercase;
+    color: orange;
+}
+
+/* page2 css */
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    border: 2px dashed orange;
+    padding: 2vw;
+    margin-bottom: 5vw;
+}
+
+.legend {
+    text-transform: lowercase;
+    font-weight: bold;
+    padding: 0 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-square {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.basic-info {
+    display: grid;
+    grid: auto auto / auto 15% 30%;
+    margin-bottom: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.name {
+    grid-area: 1 / 1 / 2 / 2;
+    box-sizing: border-box;
+}
+
+.name-input {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: left;
+    box-sizing: border-box;
+}
+
+.age {
+    grid-area: 1 / 2 / 2 / 3;
+    box-sizing: border-box;
+    width: 80%;
+    justify-self: center;
+}
+
+.age-input {
+    grid-area: 2 / 2 / 3 / 3;
+    box-sizing: border-box;
+    width: 80%;
+    justify-self: center;
+}
+
+.birth {
+    grid-area: 1 / 3 / 2 / 4;
+    box-sizing: border-box;
+}
+
+.birth-input {
+    grid-area: 2 / 3 / 3 / 4;
+    justify-self: right;
+    box-sizing: border-box;
+}
+
+.name, .age, .birth {
+    text-align: center;
+    color:rgb(53, 53, 148);
+    font-weight: bold;
+}
+
+.bio {
+    color:rgb(53, 53, 148);
+    font-weight: bold;
+    padding-left: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+fieldset input {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid black;
+    width: 100%;
+    color: rgb(84, 190, 255);
+}
+
+fieldset textarea {
+    border: 1px solid black;
+    color: rgb(84, 190, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bio-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.dachshund-design {
+    display: grid;
+    grid: repeat(4, auto)/ repeat(2, 1fr);
+    margin-bottom: 3%;
+}
+
+.dream-label {
+    grid-area: 1 / 1 / 2 / 3;
+    margin-bottom: 1%;
+    padding-left: 2%;
+    color:rgb(53, 53, 148);
+    font-weight: bold;
+    font-family: georgia;
+}
+
+.size {
+    grid-area: 2 / 1 / 3 / 2;
+    border-right: 2px dashed orange;
+    border-bottom: 2px dashed orange;
+    padding-bottom: 8%;
+}
+
+.pattern {
+    grid-area: 3 / 1 / 5 / 2;
+    border-right: 2px dashed orange;
+    padding-top: 8%;
+}
+
+.color {
+    grid-area: 2 / 2 / 4 / 3;
+    border-bottom: 2px dashed orange;
+    padding-bottom: 3%;
+}
+
+.coat {
+    grid-area: 4 / 2 / 5 / 3;
+    padding-top: 3%;
+}
+
+.size, .coat, .pattern, .color {
+    display: grid;
+    grid: repeat(7, auto) / 40% auto;
+}
+
+.size-title, .coat-title, .pattern-title, .color-title {
+    grid-area: 1 / 1 / 2 / 3;
+    margin-bottom: 2%;
+    color:rgb(84, 190, 255);
+    text-align: center;
+}
+
+.size-label1, .coat-label1, .pattern-label1, .color-label1 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.size-check1, .coat-check1, .pattern-check1, .color-check1 {
+    grid-area: 2 / 1 / 3 / 2;
+    margin-left: 35%;
+}
+
+.size-label2, .coat-label2, .pattern-label2, .color-label2 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.size-check2, .coat-check2, .pattern-check2, .color-check2 {
+    grid-area: 3 / 1 / 4 / 2;
+    margin-left: 35%;
+}
+
+.size-label3, .coat-label3, .pattern-label3, .color-label3 {
+    grid-area: 4 / 2 / 5 / 3;
+
+}
+
+.size-check3, .coat-check3, .pattern-check3, .color-check3 {
+    grid-area: 4 / 1 / 5 / 2;
+    margin-left: 35%;
+}
+
+.pattern-label4, .color-label4 {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.pattern-check4, .color-check4 {
+    grid-area: 5 / 1 / 6 / 2;
+    margin-left: 35%;
+}
+
+.pattern-label5, .color-label5 {
+    grid-area: 6 / 2 / 7 / 3;
+}
+
+.pattern-check5, .color-check5 {
+    grid-area: 6 / 1 / 7 / 2;
+    margin-left: 35%;
+}
+
+.color-label6 {
+    grid-area: 7 / 2 / 8 / 3;
+}
+
+.color-check6 {
+    grid-area: 7 / 1 / 8 / 2;
+    margin-left: 35%;
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    border: 1px solid black;
+    width: 20%;
+    height: 2vw;
+    background-color: white;
+    color: orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.page2-banner-box {
+    margin: 1% 1% 1% 1%;
+    height: 200px;
+    width: 98%;
+}
+
+.page2-banner {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* page3 css */
+li a {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.page3-banner-box {
+    margin: 1% 1% 1% 1%;
+    height: 200px;
+    width: 98%;
+}
+
+.page3-banner {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* page4 css */
+
+.gallery-grid {
+    display: grid;
+    grid: repeat(7, auto) / 50% auto;
+}
+
+.dapple-img-box {
+    grid-area: 1 / 1 / 2 / 2;
+    aspect-ratio: 3/2;
+    width: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.dapple-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dapple-txt {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.piebald-img-box {
+    grid-area: 2 / 1 / 3 / 2;
+    aspect-ratio: 3/2;
+    width: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.piebald-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.piebald-txt {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.sable-img-box {
+    grid-area: 3 / 1 / 4 / 2;
+    aspect-ratio: 3/2;
+    width: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.sable-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sable-txt {
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.solid-img-box {
+    grid-area: 4 / 1 / 5 / 2;
+    aspect-ratio: 3/2;
+    width: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.solid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.solid-txt {
+    grid-area: 4 / 2 / 5 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.wire-img-box {
+    grid-area: 5 / 1 / 6 / 2;
+    aspect-ratio: 3/2;
+    width: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.wire-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wire-txt {
+    grid-area: 5 / 2 / 6 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.long-img-box {
+    grid-area: 6 / 1 / 7 / 2;
+    aspect-ratio: 3/2;
+    width: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.long-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.long-txt {
+    grid-area: 6 / 2 / 7 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.smooth-img-box {
+    grid-area: 7 / 1 / 8 / 2;
+    aspect-ratio: 3/2;
+    width: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.smooth-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.smooth-txt {
+    grid-area: 7 / 2 / 8 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+}
